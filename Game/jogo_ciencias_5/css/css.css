@@ -1,0 +1,482 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+		font-family: Titulo;
+		//src: url(../fontes/little_sunshine.ttf);
+		//src:url(../fontes/TastyDrips.ttf);
+		//src: url(../fontes/Alighty_Nesia.ttf);
+		src: url('../fontes/Alighty_Nesia.ttf');
+}
+@font-face {
+		font-family: Titulo1;
+		//src: url(../fontes/little_sunshine.ttf);
+		//src:url(../fontes/jennifer.ttf);
+		src: url(../fontes/Alighty_Nesia.ttf);
+}
+
+body {
+	//background-image: url(../imgs/fundo2.png); 
+	background-image: url(../imgs/back_ground_20.jpg); 
+    //background-attachment: fixed; 
+    background-position: left top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 1px;
+}
+
+h1 {
+	font-family: Titulo;
+	font-size: 80px;
+	font-weight: bolder;
+	color: #FFF;
+}
+
+h2 {
+	font-family: Titulo;
+	font-size: 26px;
+	font-weight: bolder;
+	//color: #FFF;
+}
+
+#container {
+	width: 990px;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#titulo {
+	width: 370px;
+	height: 130px;
+	text-align: center;
+	background-image: url(../imgs/titulo_jogo_20.png);
+	position: relative;
+	margin-left: auto;
+    margin-right: auto;
+	background-size: 370px 130px;
+	background-repeat: no-repeat;
+	top: 5px;
+}
+
+#fundoGame {
+	width: 975px;
+	height: 635px;
+	background-image: url(../imgs/fundo_game.png); 
+	border-color: #FFF;
+	border-style: solid;
+	border-radius: 10px 20px 10px 20px;
+	position: relative;
+	background-size: 975px 650px;
+	background-repeat: no-repeat;
+    background-position: left top;
+    top: 10px;
+}
+#aluno {
+	position: absolute;
+	width: 330px;
+	height: 40px;
+	left: 700px;
+	top: 1px;
+	text-align: center;
+	line-height: 1px;
+	//text-shadow:1px 1px 1px black; 
+    background-color: orange;
+    border-radius: 12px;
+    color: #fff;
+    padding: 5px;    
+    //text-transform: uppercase;
+    font-family: Titulo;
+	font-size: 26px;
+	font-weight: bolder;
+	//color: #FFF;
+}
+
+#placar {
+	position: absolute;
+	width: 160px;
+	height: 50px;
+	color: white;
+	//border-color: #000099;
+	background-color: green;
+	//border-style: solid;
+	border-radius: 15px;
+	left: 760px;
+	top: 52px;
+	text-align: left; 
+	text-indent: 10px;
+	line-height: 10px;
+}
+
+#placar1 {
+	position: absolute;
+	width: 160px;
+	height: 50px;
+	color: white;
+	//border-color: #000099;
+	background-color: red;
+	//border-style: solid;
+	border-radius: 15px;
+	left: 760px;
+	top: 100px;
+	text-align: left; 
+	text-indent: 10px;
+	line-height: 10px;
+}
+
+#energia {
+    width: 80px;
+    height: 180px;
+	border-color: #000099;
+	background-color: white;
+	//border-style: solid;
+	border-radius: 15px;
+    position: absolute;
+    background-size: 40px 120px;
+    left: 910px;
+    top: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cientista {
+	width: 80px;
+	height: 77px;
+	position: absolute;
+	left: 460px;
+	top: 550px;
+	background-image: url(../imgs/cientista5.png);
+}
+
+#alternativa1 {
+	width: 30px;
+    height: 60px;
+    position: absolute;
+	left: 360px;
+	top: 50px;
+	//background-color: blue;
+	//border-radius: 5px 10px 5px 10px;
+    background-image: url(../imgs/tubo_azul.png);
+    background-size: 30px 60px;
+	background-repeat: no-repeat;
+}
+
+#alternativa2 {
+	width: 30px;
+    height: 60px;
+	position: absolute;
+	left: 460px;
+	top: 50px;
+	//background-color: red;
+	//border-radius: 5px 10px 5px 10px;
+	background-image: url(../imgs/tubo_vermelho.png);
+    background-size: 30px 60px;
+	background-repeat: no-repeat;
+}
+
+#alternativa3 {
+	width: 30px;
+    height: 60px;
+	position: absolute;
+	left: 560px;
+	top: 50px;
+	//background-color: green;
+	//border-radius: 5px 10px 5px 10px;
+	background-image: url(../imgs/tubo_verde.png);
+    background-size: 30px 60px;
+	background-repeat: no-repeat;
+}
+
+#alternativa4 {
+	width: 30px;
+    height: 60px;
+	position: absolute;
+	left: 660px;
+	top: 50px;
+	//background-color: yellow;
+	//border-radius: 5px 10px 5px 10px;
+	background-image: url(../imgs/tubo_amarelo.png);
+    background-size: 30px 60px;
+	background-repeat: no-repeat;
+}
+
+.pergunta {
+	font-family: Titulo;
+    font-size: 24px;
+    font-weight: bolder;
+    color: red;
+    text-indent: 10px;
+    text-align: justify;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding: 10px;
+    padding-right: 15px;
+    border-radius: 13px;
+    width: 300px;
+    //height: 480px;
+    background-color: #FFF;
+    //background-image: url(../imgs/moldura02.png);
+    //position: absolute;
+	left: -36px;
+	top: 1px;
+	//background-size: 370px 480px;
+	//background-repeat: no-repeat;
+    //background-position: left top;
+}
+
+.questao {
+    font-family: Titulo;
+    font-size: 24px;
+    font-weight: bolder;
+    color: red;
+    text-indent: 10px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 300px;
+    //height: 480px;
+    background-color: #FFF;
+    //background-image: url(../imgs/moldura02.png);
+    //position: absolute;
+	//left: -36px;
+	//top: 1px;
+	//background-size: 380px 480px;
+	//background-repeat: no-repeat;
+    //background-position: left top;
+}
+
+.resposta1, .resposta2, .resposta3, .resposta4 {
+    width: 240px;
+}
+
+.resposta1 {
+	font-family: Titulo1;
+	//font-family: fantasy;
+	font-size: 22px;
+	font-weight: bolder;
+	text-indent: 5px;
+	color: #FFF;
+	background-color: blue;
+	text-shadow: 2px 2px black;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+.resposta2 {
+	font-family: Titulo1;
+	//font-family: fantasy;
+	font-size: 22px;
+	font-weight: bolder;
+	text-indent: 5px;
+	color: #FFF;
+	background-color: red;
+	text-shadow: 2px 2px black;
+	margin-top: 17px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+.resposta3 {
+	font-family: Titulo1;
+	//font-family: fantasy;
+	font-size: 22px;
+	font-weight: bolder;
+	text-indent: 5px;
+	color: #FFF;
+	background-color: green;
+	text-shadow: 2px 2px black;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+.resposta4 {
+	font-family: Titulo1;
+	//font-family: fantasy;
+	font-size: 22px;
+	font-weight: bolder;
+	text-indent: 5px;
+	color: #FFF;
+	background-color: #e6e600;
+	//background-color: yellow;
+	text-shadow: 2px 2px black;
+	margin-top: 24px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+.anima1 {
+    width: 80px;
+	height: 77px;
+    background-image: url(../imgs/cientista5.png);
+    animation: play .9s steps(6) infinite;
+    -webkit-animation: play .9s steps(6) infinite;
+    -moz-animation: play .9s steps(6) infinite;
+    -ms-animation: play .9s steps(6) infinite;
+    -o-animation: play .9s steps(6) infinite;
+}
+@keyframes play {
+    from {background-position: 0px; }
+    to {background-position: -481px; }
+}
+@-webkit-keyframes play {
+   	from { background-position: 0px; }
+    to { background-position: -481px; }
+}
+@-moz-keyframes play {
+   	from { background-position: 0px; }
+    to { background-position: -481px; }
+}
+@-ms-keyframes play {
+   	from { background-position: 0px; }
+    to { background-position: -481px; }
+}
+@-o-keyframes play {
+￼￼￼￼from { background-position: 0px; }
+    to { background-position: -481px; }
+}
+
+#raio {
+       width: 30px;
+       height: 60px;
+       position: absolute;
+       background-image: url(../imgs/raio13.png);
+       background-size: 30px 60px;
+	   background-repeat: no-repeat;
+}
+#explosao1 {
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		background-size: 70px 70px;
+		background-repeat: no-repeat;
+}
+
+#explosao2 {	
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		background-size: 70px 70px;
+		background-repeat: no-repeat;
+}
+
+#mensagemInicial {
+	width: 600px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 150px;
+	background-image: url(../imgs/fundo_mensagem.png);
+	//background-image: url(../imgs/explosao0.png);
+	//background-color: #fff2cc;	
+	background-repeat: no-repeat;
+	background-size: 600px 350px;
+    background-position: bottom;
+	//font-family: Titulo;
+	//font-size: 30px;
+	//font-weight: bolder;
+	//text-shadow: 2px 2px #000099;;
+	//color: red;
+	//text-indent: 10px;
+	//text-align: center;
+	//border-style: solid;
+	//border-width: 2px;
+	//border-color: #000099;
+	//border-radius: 20px;
+	//padding: 2px;
+}
+fieldset {
+    //background-color: white;
+    //background: url(../HTML5/imagens/back_ground_color1.jpg);
+ 	//border-radius: 5px;
+    border: none;
+  	//margin-bottom: 12px;
+  	//overflow: hidden;
+}
+
+legend {
+    //text-shadow:1px 1px 1px black; 
+    background-color: orange;
+    //border-bottom: 1px solid #d4d4d4;
+    //border-top: 1px solid #d4d4d4;
+    border-radius: 5px;
+    //box-shadow: 3px 3px 3px #ccc;
+    color: #fff;
+    font-size: 24px;
+    //margin: 12px;
+    padding: 5px;
+    width: 680px;    
+    font-weight: bolder;
+    //text-transform: uppercase;
+    font-family: titulo; 
+}
+ul {
+    background-color: white;
+    border: 1px solid white;
+    list-style: none;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+ul li {
+    //margin: 0.5em 0em;
+}
+
+#mensagemScore {
+	width: 680px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	//display: block;
+	margin-top: 150px;
+	font-family: Titulo;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #000099;
+	text-align: center;
+}
+
+#mensagemFinal {
+	width: 680px;
+	height: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 150px;
+	background-image: url(../imgs/fundo_final.png);
+	//background-image: url(../imgs/estante.png);
+	//background-color: #fff2cc;	
+	background-repeat: no-repeat;
+	background-size: 600px 350px;
+    background-position: bottom;
+	//font-family: Titulo;
+	//font-size: 30px;
+	//font-weight: bolder;
+	//text-shadow: 2px 2px #000099;
+	//color: red;
+	//text-indent: 10px;
+	//text-align: center;
+	//border-style: solid;
+	//border-color: #000099;
+	//border-radius: 20px;
+	//padding: 2px;
+}
+
+#mensagem {
+	//padding-top:90px;
+	//margin-left:45px;
+}	

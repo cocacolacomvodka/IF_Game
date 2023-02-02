@@ -1,0 +1,32 @@
+body{
+    background-color: #a9ffa1;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10%;
+    font-family: verdana;
+}
+
+.bloco{
+    position: absolute;
+    background: white;
+    border-radius: 25px;
+    width: 615px;
+    height: 550px;
+    left: 366px;
+    top: 40px;
+}
+
+p{
+    text-align: center;
+    margin-top: 20%;
+}
+
+img{
+    width:250px;
+    height:100px;
+    margin-left: 32%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
